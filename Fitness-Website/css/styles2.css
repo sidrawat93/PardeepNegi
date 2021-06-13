@@ -1,0 +1,335 @@
+/*
+COLOR PALETTE
+#08605F - forest green
+#598381 - khaki
+#8E937D - grey-green
+#177E89 - turq
+#0F5257 - dark dark green
+*/
+
+
+/* Global styles
+------------------------------------*/
+*, *:after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.5rem;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+  font-size: 20px;
+  font-weight: bold;
+  color: #0F5257;
+  text-align: center;
+}
+h2{
+  font-size: 18px;
+  color: #0F5257;
+}
+
+h3{
+  font-size: 16px;
+  color: #0F5257;
+}
+
+p{
+  font-size: 15px;
+  color: #08605F;
+}
+
+li{
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 2rem;
+}
+
+a {
+  color: #598381;
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+section{
+  position: relative;
+	padding: 10em;
+  background-color: #c8f7dc;
+}
+
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.swoop-1, .swoop-2 {
+  margin-bottom: 90px;
+	padding: 1em 10% 7em;
+	border-radius: 0 0 0 90px;
+}
+
+.swoop-1::before,
+.swoop-1::after {
+	left: 0;
+	z-index: -1;
+	height: 90px;
+	background: #c8f7dc;
+}
+
+.swoop-2::before,
+.swoop-2::after {
+	left: 0;
+	z-index: -1;
+	height: 90px;
+	background: #ffffff;
+}
+
+.swoop-1::before, .swoop-2::before {
+	top: 100%;
+	width: 100%;
+	border-radius: 0 90px 0 0;
+}
+
+.swoop-1::after, .swoop-2::after {
+	bottom: 0;
+	z-index: -1;
+	width: 50%;
+}
+
+.banner {
+  background-image: url(../images/background-mock-2.jpg);
+  background-size: cover;
+  height: 250px;
+  z-index: 1;
+  position: relative;
+}
+
+.banner img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  padding: 75px 0px;
+
+}
+
+/* Jump to section/nav
+------------------------------------*/
+nav{
+  width: 100vw;
+}
+
+.jump-to {
+  overflow: hidden;
+  display: flex;
+  padding: 30px 10px 30px 10px;
+}
+
+.jump-to ul{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px 0 20px;
+}
+
+.jump-to a{
+  text-decoration: none;
+  padding: 0;
+  color: #0F5257;
+
+}
+
+.jump-to a:hover{
+  color: #C6E9FF;
+}
+
+  }
+
+  /* Background colour & images
+  ------------------------------------*/
+
+.intro {
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro p{
+  text-align: justify;
+}
+
+.intro img{
+  float: right;
+  height: 400px;
+  padding-left: 50px;
+}
+
+
+/* Services
+------------------------------------*/
+
+ul{
+  line-height: 100px;
+  text-align: left;
+}
+
+.service h1{
+  text-align: center;
+}
+
+.service li{
+  line-height: 30px;
+}
+
+.title{
+  font-size: 17px;
+  color: #0F5257;
+  font-weight: bold;
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+.prices{
+  text-align: left;
+  box-sizing: content-box;
+}
+
+.prices p{
+  text-align: justify;
+  text-align: left;
+}
+
+.location{
+}
+
+li{
+  color: #0F5257;
+}
+
+/* Lifestyle
+------------------------------------*/
+
+.lifestyle{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Blog
+------------------------------------*/
+.center p{
+  text-align: center;
+}
+
+.link-back h1{
+  text-align: left;
+  padding-left: 35px;
+  font-size: 14px;
+  margin-top: -50px;
+}
+
+.blog-post{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.blog-title{
+  padding: 100px 0;
+  margin: 0;
+}
+/* Contact
+------------------------------------*/
+
+  .index-icons{
+    margin: 50px 20%;
+  }
+
+/* contact info*/
+
+footer{
+  padding:10px 0 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+#contactInfo{
+  justify-content: space-between;
+
+}
+
+/* social media*/
+.sm-logo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+}
+
+#social-media-bottom{
+    text-align:center;
+}
+
+#social-media-top{
+    z-index: 2;
+    position: absolute;
+    right:1px;
+}
+
+#link-back{
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    ul{
+      flex-direction: column;
+    }
+    li{
+        margin: 10px 0;
+        font-size: 18px;
+      }
+    nav li{
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+      h1{
+        font-size: 25px;
+      }
+      h2{
+        font-size: 22px;
+        color: #0F5257;
+      }
+
+      h3{
+        font-size: 20px;
+        color: #0F5257;
+      }
+
+      p{
+        font-size: 18px;
+        color: #08605F;
+      }
+
+      .intro img{
+        height: auto;
+        width: 100%;
+        padding: 0 0 50px;
+      }
+   }
